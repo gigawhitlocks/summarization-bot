@@ -4,7 +4,7 @@ After=syslog.target network.target
 
 [Service]
 Type=simple
-User=ian
+User=
 WorkingDirectory=
 ExecStart=
 Environment=SUMMARIZER_USERNAME=

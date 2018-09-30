@@ -49,6 +49,8 @@ server {
   - `SUMMARIZER_SECRET=` allows tldrbot to reject unauthorized requests for summaries. This value comes from the `Token (optional)` field in the Integration panel in Rocket Chat.
   - `SUMMARIZER_SITENAME=` is the fully qualified domain name where your Rocket Chat instance lives, e.g. `example.com` or `rocket.chat` -- do not specify `https://` here.
 
+4) Fill out the other necessary details in the template:
+   - Set `User` to the username of the user that will be executing the integration
    - Set the `WorkingDirectory` to the location where you cloned the repo: `WorkingDirectory=/path/to/summarizer`
    - Set `ExecStart` to call the Python binary in your virtualenv with the full path to `summarizer.py` as its argument, e.g. `ExecStart=/path/to/summarizer/repo/virtualenv/bin/python /path/to/summarizer/summarizer.py`
 
