@@ -41,6 +41,8 @@ server {
 ```
 3) Create an Outgoing WebHook Integration through the rocket.chat admin panel. Currently the command used to trigger the bot is not configurable, so match the Event Trigger, Enabled, Channel, and Trigger Words fields in this screenshot while installing your integration. Set the `URLs` field to include the fully qualified domain of your summarizer. 
 
+![Screenshot of the integrations page](screenshots/integration-settings.png)
+
 4) Copy the systemd unit file to `/etc/systemd/system/` and add your environment variables to that file:
   - `SUMMARIZER_USERNAME=` should be a user on your Rocket Chat instance that has the necessary permissions to read channels and post messages
   - `SUMMARIZER_PASSWORD=` should be the password for the account above
