@@ -1,0 +1,16 @@
+[Unit]
+Description=Summarization Chatbot
+After=syslog.target network.target
+
+[Service]
+Type=simple
+User=ian
+WorkingDirectory=/home/ian/summarizer
+ExecStart=/home/ian/summarizer/s/bin/python /home/ian/summarizer/summarizer.py
+Environment=SUMMARIZER_USERNAME=
+Environment=SUMMARIZER_PASSWORD=
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
