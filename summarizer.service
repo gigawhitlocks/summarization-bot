@@ -9,6 +9,8 @@ WorkingDirectory=
 ExecStart=
 Environment=SUMMARIZER_USERNAME=
 Environment=SUMMARIZER_PASSWORD=
+Environment=SUMMARIZER_SECRET=
+Environment=SUMMARIZER_SITENAME=
 Restart=always
 RestartSec=5
 
