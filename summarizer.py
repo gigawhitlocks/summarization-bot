@@ -51,7 +51,7 @@ def summarize():
     count = 150
     if query != "":
         try:
-            count = int(query) if int(query) > 10 else count
+            count = int(query) if int(query) > 10 and int(query) < 1000 else count
         except ValueError:
             pass
 
